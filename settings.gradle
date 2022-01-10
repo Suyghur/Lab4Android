@@ -1,0 +1,31 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven {
+            allowInsecureProtocol = true
+            url 'https://maven.aliyun.com/repository/public'
+        }
+        maven {
+            allowInsecureProtocol = true
+            url 'https://jitpack.io'
+        }
+    }
+}
+
+rootProject.name = "Lab4Android"
+//include ':common'
+//include ':app'
+//setBinding(new Binding([gradle: this]))
+//evaluate(new File(
+//        settingsDir,
+//        'flutter_module/.android/include_flutter.groovy'
+//))
+//
+//include ':network'
+//include ':blc'
+//
+//include ':flutter_module'
+include ':app'
